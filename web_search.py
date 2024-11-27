@@ -68,7 +68,7 @@ def find_blog_position_main(search_query, blog_title, event):
             except Exception:
                 data_queue.put("에러가 발생했습니다. 개발자에게 문의바랍니다.")
                 break
-        data_queue.put(f"메인검색에서 '{blog_title}'을(를) 찾을 수 없습니다.")
+        data_queue.put(f"전체탭에서 '{blog_title}'을(를) 찾을 수 없습니다.")
 
     finally:
         driver.quit()
